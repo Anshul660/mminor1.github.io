@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+
+        }
+     body,  html{
+	height: 100%;
+
+}
+	body {
+ font-family: "Roboto", sans-serif;
+ font-weight: 370; 
+line-height: 1.4; 
+background-color:#ffe6cc;
+scroll-behavior: smooth;
+min-height: 100%; 
+display:flex; 
+flex-direction: column;
+}
+header{
+	position:sticky;
+	top:0;
+	
+	background-color:#ffd9b3; 
+  box-shadow: 5px 5px 5px ; 
+border-bottom: 2px solid rgb(252,196,124);
+box-shadow: 2px solid rgb(253,124,124);
+}
+nav{
+	position:sticky;
+display: flex;
+justify-content: space-between;  
+align-items: center;  
+width: 100%;
+flex-wrap:row-wrap;
+background: transparent;
+
+}
+nav img{
+height:60px; 
+width:60px;
+margin-left:10px; 
+opacity: ; 
+
+}
+
+.nav-container ul{
+display: flex;
+gap:50px; 
+font-size: 20px;
+list-style: none;  
+}
+
+.nav-container ul li{ 
+	border-bottom:2px solid transparent; 
+	transition: 0.2s ease-in-out; 
+	}
+	.nav-container ul li:hover{ 
+	border-bottom:2px solid #ff66cc;
+	transition: 0.2s ease-in-out; 
+	}
+input{ 
+width: 200px; 
+height: 30px; 
+display: block; 
+border-radius: 25px; 
+font-size: 20px;
+ padding: 8px 40px 8px 20px; 
+border: none; 
+box-shadow: 5px,5px,5px rgba(1,1,1,0.5);
+margin-left:20px;
+}
+.signin{
+	display:flex;
+	gap:15px;
+	margin-right: 30px;
+	}	
+	
+
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.btn:focus + .list {
+  display: block;
+}
+	
+
+.container {
+	margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+padding:50px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.card p{
+  margin-top: 10px;
+  color:red;
+  font-weight: 500;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.food-name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 16px;
+  color: #888;
+}
+
+
+
+.footer{
+margin-top:auto;
+}
+.footer_container { 
+background-color:#fff0db; 
+display: flex;  
+justify-content: space-evenly;  
+padding: 30px;
+align-items: bottom; 
+}
+.link_lists h3 {
+ margin-bottom: 10px;
+ color: gray;
+}
+.link_lists ul {
+ list-style: none; 
+}
+.news_letter input { 
+padding: 5px 40px; 
+margin-bottom: 10px;
+}
+
+.icon_container { 
+display: flex; 
+gap: 15px;
+ font-size: 32px;
+}
+.news_letter h3 { 
+margin-bottom: 10px;
+ color: gray;
+}
+
+.link_lists ul li { 
+font-size: 16px; 
+margin-bottom: 5px;
+}
+a{
+text-decoration:none;
+color: black; 
+}
+
+.card:hover{
+	transition: 0.2s ease-in-out;
+	border-radius: 15px;
+ box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	}
+
+</style>
+
+</head>
+<body>
+<header>
+<nav> 
+<img src= "logo.png" alt="logo"/>
+<div class="nav-container"> 
+<ul>
+<li class="item"> <a href="index.html">home</a></li>
+<li class="item"> <a href="about.html">about</a></li>
+<li class="item"> <a href="foodmenu.html">FoodMenu</a></li>
+<li class="item" ><a href="booktable.html">Booktable</a></li>
+</ul>
+</div> 
+<div class = "signin">
+<input type="text" placeholder ="search"/>
+<a href ="sign-in.html">
+sign in
+</a>
+</div>
+</nav>
+</header>
+
+<div class="container">
+  
+<div class="card">
+      <img src="food1.jpeg" alt="Food 1">
+      <h3 class="food-name">Shushi</h3>
+      <p class="price">$110</p>
+    </div>
+    <div class="card">
+      <img src="food2.jpeg" alt="Food 2">
+      <h3 class="food-name">Kung Poa</h3>
+      <p class="price">$78</p>
+    </div>
+<div class="card">
+      <img src="food3.jpeg" alt="Food 1">
+      <h3 class="food-name">Veg biryani</h3>
+      <p class="price">$15</p>
+    </div>
+    <div class="card">
+      <img src="food4.jpeg" alt="Food 2">
+      <h3 class="food-name">Mapo Tofu</h3>
+      <p class="price">$150</p>
+    </div>
+  <div class="card">
+      <img src="food5.jpeg" alt="Food 1">
+      <h3 class="food-name">Chow Main</h3>
+      <p class="price">$155</p>
+    </div>
+    
+    <div class="card">
+      <img src="food6.jpeg" alt="Food 2">
+      <h3 class="food-name">Burger</h3>
+      <p class="price">$15</p>
+    </div>
+  <div class="card">
+      <img src="food7.jpeg" alt="Food 1">
+      <h3 class="food-name">Salad</h3>
+      <p class="price">$10</p>
+    </div>
+    <div class="card">
+      <img src="food8.jpeg" alt="Food 2">
+      <h3 class="food-name">Eggi Vegi</h3>
+      <p class="price">$8</p>
+    </div>
+<div class="card">
+      <img src="food9.jpeg" alt="Food 1">
+      <h3 class="food-name">Clam CHoweder</h3>
+      <p class="price">$110</p>
+    </div>
+    <div class="card">
+      <img src="food10.jpeg" alt="Food 2">
+      <h3 class="food-name">Wonton </h3>
+      <p class="price">$38</p>
+    </div>
+<div class="card">
+      <img src="food11.jpeg" alt="Food 1">
+      <h3 class="food-name">Char Siu</h3>
+      <p class="price">$66</p>
+    </div>
+    <div class="card">
+      <img src="food12.jpeg" alt="Food 2">
+      <h3 class="food-name">Burger</h3>
+      <p class="price">$45</p>
+    </div>
+<div class="card">
+      <img src="food13.jpeg" alt="Food 1">
+      <h3 class="food-name">Jerky</h3>
+      <p class="price">$100</p>
+    </div>
+    <div class="card">
+      <img src="food14.jpeg" alt="Food 2">
+      <h3 class="food-name">Chole</h3>
+      <p class="price">$80</p>
+    </div>
+<div class="card">
+      <img src="food15.jpeg" alt="Food 1">
+      <h3 class="food-name">Pot Roast</h3>
+      <p class="price">$130</p>
+    </div>
+
+    <div class="card">
+      <img src="food16.jpeg" alt="Food 2">
+      <h3 class="food-name">Twinkies</h3>
+      <p class="price">$8</p>
+    </div>    <div class="card">
+      <img src="food17.jpeg" alt="Food 2">
+      <h3 class="food-name">Samosa</h3>
+      <p class="price">$40</p>
+    </div>
+    <div class="card">
+      <img src="food18.jpeg" alt="Food 2">
+      <h3 class="food-name">Dosa</h3>
+    </div>
+    
+
+</div>
+
+<footer>
+ <div class="footer_container ">  
+<div class="link_lists">
+ <h3>Main Links</h3>
+ <ul> <li>Order Tracking</li> 
+<li>New Order</li> 
+<li>Contact Us</li> 
+<li>News & Blogs</li> </ul>
+ </div> 
+
+<div class="link_lists"> 
+<h3>Support</h3> <ul>
+ <li>About Us</li>
+ <li>Privacy Policy</li>
+ <li>Terms & Conditons</li> </ul> </div>
+ <div class="news_letter"> 
+<h3>Support</h3> 
+<input type="email" placeholder="Enter your Email..." /> 
+<h3>Follow Us</h3>
+ <div class="icon_container">
+
+ <div class="icon"> 
+<i class="fa fa-facebook"></i> 
+</div>
+
+ <div class="icon"> 
+<i class="fa fa-twitter" aria-hidden="true">
+</i> 
+</div> 
+
+<div class="icon">
+ <i class="fa fa-instagram" aria-hidden="true">
+</i> 
+</div>
+
+ <div class="icon">
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+ </div> 
+
+</div>
+ </div>
+ </div> 
+</footer>
+
+</body>
+</html>

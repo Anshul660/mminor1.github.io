@@ -1,0 +1,568 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>  
+<title>  major project resturent using js also</title> 
+<meta charset="utf-8">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+
+<script src="https://kit.fontawesome.com/2236c52c7d.js" 
+crossorigin="anonymous">
+
+</script>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+
+        }
+       html,body {
+ font-family: "Roboto", sans-serif;
+ font-weight: 370; 
+line-height: 1.4; 
+background-color:#ffe6cc;
+scroll-behavior: smooth;
+}
+header{
+	position:sticky;
+	top:0;
+	
+	background-color:#ffd9b3; 
+  box-shadow: 5px 5px 5px ; 
+border-bottom: 2px solid rgb(252,196,124);
+box-shadow: 2px solid rgb(253,124,124);
+}
+nav{
+	position:sticky;
+display: flex;
+justify-content: space-between;  
+align-items: center;  
+width: 100%;
+flex-wrap:row-wrap;
+background: transparent;
+
+}
+nav img{
+height:60px; 
+width:60px;
+margin-left:10px; 
+opacity: ; 
+
+}
+
+.nav-container ul{
+display: flex;
+gap:50px; 
+font-size: 20px;
+list-style: none;  
+}
+
+.nav-container ul li{ 
+	border-bottom:2px solid transparent; 
+	transition: 0.2s ease-in-out; 
+	}
+	.nav-container ul li:hover{ 
+	border-bottom:2px solid #ff66cc;
+	transition: 0.2s ease-in-out; 
+	}
+input{ 
+width: 200px; 
+height: 30px; 
+display: block; 
+border-radius: 25px; 
+font-size: 20px;
+ padding: 8px 40px 8px 20px; 
+border: none; 
+box-shadow: 5px,5px,5px rgba(1,1,1,0.5);
+margin-left:20px;
+}
+.signin{
+	display:flex;
+	gap:15px;
+	margin-right: 30px;
+	}	
+	
+
+.btn:focus + .list {
+  display: block;
+}
+	
+	
+.section1{
+display:grid; 
+grid-template-columns:1fr 1fr; 
+background-color:#ffe6cc;
+margin-top:80px;
+margin-bottom: 80px;
+gap: 50px;
+
+
+
+} 
+	.red{
+	color: red; 
+	border-bottom:4px solid #ffa64D;
+	}
+	.intro{ 
+		margin-top:60px;
+	margin-left:20px;
+	
+	}
+	 .intro h1
+	{  
+		margin-top:30px;
+		font-size:60px;  
+		line-height:1.2;
+		font-weight:400;  
+		margin-bottom:40px;
+		} 
+			.main_img{
+		margin-top:40px;
+		} 
+		
+	.section2 h3{
+		color:red;
+	}
+	.menu img {
+	width: 180px;
+	height: 180px; 
+	
+	}
+
+	.section2{
+margin-bottom:0;
+		display: grid;
+	place-items: center; 
+	background-color:#ffe6cc;
+	margin-bottom:70px;
+
+	}
+	.menu-container{ 
+     display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+     border-radius:15px;
+     background-color:white;
+		}
+		.menu{
+		padding:20px;  
+		display: flex;
+		flex-direction: column;
+		gap:10px;
+		text-align: center; 
+		align-items: center; 
+		}
+		.menu img{
+		border-radius:10px;
+		}	
+						.section3{
+			background-color:#ffe6cc;
+			margin-top:0px;
+			display: grid;  
+		grid-template-columns:1fr  1fr; 
+		gap: 30px;
+				 	
+						}
+	 .sec_img{
+				display:flex;
+			align-items:center;
+			justify-content: space-evenly;
+						}
+		.section3 .sec_img img{
+	border-radius: 15px;
+ 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	width: 400px;
+	}
+
+	.section3 .sec_img img:hover{
+	transition: 0.2s ease-in-out;
+	border-radius: 15px;
+ box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	}.why{ 
+	margin-top:69px;
+		}
+	.why-nested1{
+	display: flex;
+	gap:5px; 
+	margin-top:10px;
+
+	align-items: center; 
+	}
+		.why-nested1 img{
+			width:70px;
+			height:70px;
+			border-radius: 50%;
+		}
+			.why-nested2{
+	margin: 10px;
+	}
+	.popular{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-evenly; 
+	align-items: center;
+	margin:20px auto;
+	text-align:center; 
+	width: 800px;
+	line-height:1.4;
+	}
+	.popular p{
+		margin-top: 30px;
+}
+	.section4{
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	}
+
+	.s4{ 
+		margin-top: 200px;
+	display:flex;
+		height: 250px;
+		gap:20px;
+		width:1100px;
+	background-color:#ffb366;
+	margin-bottom:50px;
+padding: 20px;
+	}
+	.popular-item{
+		display:flex;
+		justify-content:center; 
+		align-items: center; 
+		flex-direction:column;
+		background-color: white; 
+		text-align: center; 
+	margin-top:-130px;
+		transition: 0.2s ease-in-out;
+	}
+	.popular-item:hover{	transition: 0.4s ease-in-out;
+	border-radius: 15px;
+ box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	}
+	.popular-item img{
+		margin-top: 10px;
+	width:100px;
+	height: 100px;	
+	}
+	.popular-item h3{ 
+	margin-top: 16px;
+	color:#ff3333;
+}
+.popular-item h3 { 
+	margin-top: 16px;
+	
+}
+
+.section5{
+display: grid; 
+grid-template-columns: 1fr 1fr; 
+gap:30px; 
+place-items:center; 
+padding: 20px;
+}
+
+.feedback{
+	display: flex; 
+	flex-direction: column;
+	gap:20px;
+}
+.feedback h1{
+font-size: 30px;
+}
+.section5 span{
+color:red;
+}
+.sec5 img{
+width: 400px;
+height:400px;
+}
+.sec5 img:hover{
+	transition: 0.2s ease-in-out;
+	border-radius: 15px;
+ box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	}
+.end-logo{
+display: flex; 
+gap:10px;
+place-items:center;
+font-family: 'Tangerine', serif;
+        font-size: 30px;
+border: 1px solid  #ffcc99;  
+border-top-right-radius: 100px;
+background-color:#ffd9b3;
+}
+.end-logo img{
+	width:80px;
+	height: 80px;
+}
+
+.footer_container { 
+background-color:#fff0db; 
+display: flex;  
+justify-content: space-evenly; 
+padding: 30px;
+}
+
+
+.link_lists h3 {
+ margin-bottom: 10px;
+ color: gray;
+}
+.link_lists ul {
+ list-style: none;
+}
+
+.news_letter input { 
+padding: 5px 40px; 
+margin-bottom: 10px;
+}
+
+.icon_container { 
+display: flex; 
+gap: 15px;
+ font-size: 32px;
+}
+.news_letter h3 { 
+margin-bottom: 10px;
+ color: gray;
+}
+
+.link_lists ul li { 
+font-size: 16px; 
+margin-bottom: 5px;
+}
+a{
+text-decoration:none;
+color: black; 
+}
+
+
+
+
+.explore_btn{
+		color:red; 
+		width:120px;	
+		height:40px; 
+		border-color:#ff3385;
+		font-size: 20px;
+		padding: 2px;
+		  box-shadow:1px 1px 10px rgba(1, 1,1, 0.5);
+		margin-top:30px;
+		text-shadow: 5px 5px 10px red;
+		}
+	.explore_btn:hover{
+			transition:0.6s ease-in-out; 
+			color:white; 
+			background-color:#ff3333; 
+			}
+			
+		.menu-btn{
+		color:red; 
+		width:120px;	
+		height:40px; 
+		border-color:#ff3385;
+		font-size: 20px;
+		padding: 2px;
+		  box-shadow:1px 1px 10px rgba(1, 1,1, 0.5);
+		margin-top:30px;
+		text-shadow: 5px 5px 10px red;
+		}
+			.menu-btn:hover{
+			transition:0.6s ease-in-out; 
+			color:white; 
+			background-color:red; 
+			}
+		
+
+</style>
+
+</head>
+</body>
+<header>
+<nav> 
+<img src= "logo.png" alt="logo"/>
+<div class="nav-container"> 
+<ul>
+<li class="item"> <a href="#home">home</a></li>
+<li class="item"> <a href="about.html">about</a></li>
+<li class="item"> <a href="foodmenu.html">FoodMenu</a></li>
+<li class="item" ><a href="booktable.html">Booktable</a></li>
+</ul>
+</div> 
+<div class = "signin">
+<input type="text" placeholder ="search"/>
+<a href ="sign-in.html">
+sign in
+</a>
+</div>
+</nav>
+</header>
+
+<section class ="section1" id="home">
+<div class= "intro">
+<h1 >Enjoy <span class ="red">Delicius </span><span class ="red">Food</span> in Your Healthy Life.</h1> 
+<p> Satisfy your cravings with every bite. Indulge in delicious food that will ignite your taste buds.</p> 
+<button class ="explore_btn"><a href="about.html">Visite Now</a></button> 
+</div>
+<div class="main_img">
+<img src="main-img.png" alt=""></img></a> 
+</div>
+</section> 
+<!--menu section-->
+<section class="section2">
+<div class= "menu-container">
+
+<div class="menu">
+<img src="menu 1.jpeg" alt="menu-image"/>
+<h2>Frid Rice </h2>
+<p> firde rice incliding vegies</p> 
+<button class="menu-btn"><a href="foodmenu.html">See Menu</a></button> 
+</div>
+<div class="menu">
+<img src="foodmenu3.png" alt="menu-image"/>
+<h2>Salids</h2>
+<p>Costomise Your Salid according to your need</p> 
+<button class="menu-btn"><a href="foodmenu.html">See Menu</a></button> 
+</div>
+
+<div class="menu">
+<img src="img1.jpeg "alt="menu-image"/>
+<h2>Biryani</h2>
+<p>Basmati Chiken Biryani</p> 
+<button class="menu-btn"><a href="foodmenu.html">See Menu</a></button> 
+
+</div>
+
+</div>
+</section>
+<!--menu section-->
+
+<section class ="section3">
+<div class="sec_img">
+<img src="images (1).jpeg" alt=""></img>
+</div>
+
+<div class="why">
+<h1 >Why People Choose Us ?</h1> 
+<div class="why-nested1">
+<div class=" why-nested2">
+<h2>Varities of food items</h2>
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing  </p> 
+</div>
+</div>
+<div class="why-nested1">
+<div class=" why-nested2">
+<h2>No compromise with quality</h2>
+<p> Lorem ipsum dolor t, con।kk sectetur adipisicing elit.  </p> 
+</div>
+</div>
+<div class="why-nested1"><div class=" why-nested2">
+<h2>Organic vagies are used </h2>
+<p> Organically grown vegetables are used for cooking. </div>
+</div>
+</div>
+</section>
+
+<!--popular food items-->
+<div class="popular">
+<h1>Our Popular Food Items</h1>
+<p> "Indulge in our mouthwatering cuisine, crafted with love and using only the freshest, high-quality ingredients. Deliciousness guaranteed!"</p>
+</div>
+
+<section class ="section4">  
+<div class = "s4"> 
+<div class ="popular-item">
+<img src="poimg.png" alt ="Popular item1"/>
+<h2>Burger</h2>
+<p>A hamburger,or simply burger ,is a sandwhich consisting of filling- chees and lots of veggies</p>
+<h3>$75.6</h3>
+</div>
+<div class ="popular-item">
+<img src="poimg2.png" alt ="Popular item1"/>
+<h2>Green Salad</h2>
+<p> It is most often composed of leafy vegetables such as lettuce varieties, spinach, or rocket (arugula).</p>
+<h3>$55.6</h3>
+</div>
+<div class ="popular-item">
+<img src="poimg4.png" alt ="Popular item1"/>
+<h2>Pasta</h2>
+<p>Traditional Italian noodles, which differentiates it from other types of noodles around the world</p>
+<h3>$150.6</h3>
+</div>
+
+<div class ="popular-item">
+<img src="poimg31.png" alt ="Popular item1"/>
+<h2>Chicken Biryani</h2>
+<p>A single plate of Chicken Biryani consists of protein, fat, and carbohydrates</p>
+<h3>$45.6</h3>
+</div>
+</div>
+</section>
+
+
+<section class ="section5">
+<div class ="feedback">
+<h1>Customer <span>Feedback</span></h1>
+<p>At our company, we value our customers' opinions and strive to provide the best possible experience for them. We collect customer feedback through various channels such as surveys, social media, and direct communication, and use it to improve our products and services. Positive feedback encourages us to continue providing exceptional service, while negative feedback helps us identify areas for improvement and make changes to better meet our customers' needs. We are committed to listening to our customers and using their feedback to make our business better.</p>
+<div class ="end-logo">
+<img src= "logo.png" alt="logo"/>
+<h2>Anshul</h2>
+</div>
+</div>
+
+<div class="sec5">
+<img src="cp.png" alt=" shef-image"/>
+</div>
+</section>
+<footer>
+ <div class="footer_container ">  
+<div class="link_lists">
+ <h3>Main Links</h3>
+ <ul> <li>Order Tracking</li> 
+<li>New Order</li> 
+<li>Contact Us</li> 
+<li>News & Blogs</li> </ul>
+ </div> 
+<div class="link_lists"> 
+<h3>Support</h3> <ul>
+ <li>About Us</li>
+ <li>Privacy Policy</li>
+ <li>Terms & Conditons</li> </ul> </div>
+ <div class="news_letter"> 
+<h3>Support</h3> 
+<input type="email" placeholder="Enter your Email..." /> 
+<h3>Follow Us</h3>
+ <div class="icon_container">
+
+ <div class="icon"> 
+<i class="fa fa-facebook"></i> 
+</div>
+
+ <div class="icon"> 
+<i class="fa fa-twitter" aria-hidden="true">
+</i> 
+</div> <div class="icon">
+
+	<a href="https://www.instagram.com/anshul_660/">	<i class="fa fa-instagram" aria-hidden="true">
+	</i> </a>
+</div>
+
+ <div class="icon"><a href="
+	https://www.linkedin.com/in/anshul-lodhi-b92164268
+	">
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+</a> 
+</div> 
+
+</div>
+ </div>
+ </div> 
+</footer>
+
+</body>
+</html>
+<!--  -->
